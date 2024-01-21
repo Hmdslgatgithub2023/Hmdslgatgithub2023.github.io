@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>سایت دکتر مریم هاشمی</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: rgb(185, 18, 116);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4a0769;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .navbar {
+            background-color: #636e72;
+            height: 60px;
+            font-size: medium;
+            color: rgb(105, 5, 5);
+            margin: 0 auto;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 15px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #66ccff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .left-container,
+        .right-container {
+            flex: 1;
+            height: 100vh;
+            position: relative;
+        }
+
+        .left-container {
+            background-image: url('https://s30.picofile.com/file/8471626218/78451487.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .right-container {
+            background-image: url('https://img.freepik.com/premium-photo/medical-stethoscope-bright-background_488220-54007.jpg?w=996');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 5px; /* افزودن یک بوردر به عکس پس‌زمینه */
+            overflow: hidden; /* جلوگیری از نمایش بوردرهای عکس پس‌زمینه به خارج از مرزهای تصویر */
+        }
+
+        .right-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border: 2px solid #4a0769;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .intro-box {
+            position: absolute;
+            top: 50%;
+            right: 15%;
+            transform: translate(0, -50%);
+            padding: 15px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #b77ed1;
+            margin: 20px 0;
+            z-index: 1;
+            box-shadow: 0 0 0 2px #b77ed1; /* افزودن حاشیه برای جلوگیری از عبور بوردر از زیر عکس پس‌زمینه */
+        }
+
+        .intro-box h1,
+        .intro-box p {
+            margin: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">درباره دکتر هاشمی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">رزرو وقت ویزیت</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تماس با ما</a>
+                    </li>
+                </ul>
+                <!-- افزودن 4 لینک جدید به سمت راست -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Reserve Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Introduction and Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content - Homepage -->
+    <div class="container mt-4">
+        <div class="left-container"></div>
+        <div class="right-container">
+            <div class="intro-box">
+                <h1>  درباره دکتر مریم هاشمی :</h1>
+                <p>  <br>    </p>
+                <p><p style="color: #7d053f;">    دکتر مریم هاشمی متخصص رادیولوژی ، سونوگرافی ، سی تی اسکن و MRI   عضو انجمن های رادیولوژی آمریکا،اروپا وایران
+                        فارغ التحصیل دکتری پزشکی عمومی و
+                        فارغ التحصیل دکتری تخصصی رادیولوژی، سونوگرافی، CT scan و MRI </p>
+    
+                <p><p style="color: #7d053f;">دارنده مدرک فلوشیپ تصویربرداری بیماری های زنان، بارداری و جنین از دانشگاه علوم پزشکی تهران  </p>
+                <p><p style="color: #7d053f;">دارنده مدرک فلوشیپ تصویربرداری و اینتروشن پستان از دانشگاه علوم پزشکی تهران  </p>
+                <p><p style="color: #7d053f;">اخذ مدرک تخصصی بین المللی IOTA   </p>
+    
+                <p><p style="color: #7d053f;">مهمان مدعو و شرکت و حضور فعال در کنگره های تخصصی سالیانه رادیولوژِی اروپا ECR  </p>
+                <p><p style="color: #7d053f;"> شرکت و حضور فعال در کنگره های تخصصی سالیانه رادیولوژِی FMF , ISOUG  </p>
+    
+                <p><p style="color: #7d053f;">سابقه تدریس در دانشگاه و سخنران مدعو  از طرف دانشگاههای علوم پزشکی شهر تهران   </p>
+                <p><p style="color: #7d053f;">سابقه همکاری با مطرح ترین بیمارستای های تخصصی شهر تهران نظیر بیمارستان فوق تخصص تندیس (جردن)،بیمارستان تخصصی و فوق تخصصی لاله (شهرک غرب) ،بیمارستان فوق تخصصی بهمن (شهرک غرب)    </p>
+                <p><p style="color: #7d053f;">همکاری با موسسه سونوگرافی و رادیولوژِی سلامت زنان (واقع در گاندی)</P>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
